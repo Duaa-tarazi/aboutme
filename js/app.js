@@ -59,36 +59,37 @@ Add a question to the guessing game that takes in a numeric input by prompting t
 let sister = prompt('guess how many sisters i have ?');
 sister = Number(sister);
 for (let i = 0; i <= 4; i++) { //It should give the user exactly four opportunities to get the correct answer
-    if (sister < 0) {
-        alert('enter alogic answer ');
-        sister = prompt('guess how many sisters i have ?');
+  if (sister < 0) {
+    alert('enter alogic answer ');
+    sister = prompt('guess how many sisters i have ?');
 
-    }
-    else if (sister == 1) {
-        alert('you are right');
-        score++;
-        break;
-    }
-    else {
-        alert('No gusses again');
-        sister = prompt('guess how many sisters i have ?');
+  }
+  else if (sister == 1) {
+    alert('you are right');
+    score++;
+    break;
+  }
+  else {
+    alert('No gusses again');
+    sister = prompt('guess how many sisters i have ?');
 
-    }
+  }
 
 }
- alert('1 sister is the right answer');// tell the user the correct answer.
+alert('1 sister is the right answer');// tell the user the correct answer.
 //num6
 let fruitArr = ['banana', 'dates', 'orange', 'mango', 'peach'];// question that could have many possibilities (array i think) 
-    for (let index = 0; index === 6; index++) {  //Give the user 6 attempts to guess the correct answer.
-        let fruit = prompt('what is my faveret fruit?');
-        if (fruit !== fruitArr){
-        alert('not of my fav fruit');}
-        
-else {
+for (let index = 0; index === 6; index++) {  //Give the user 6 attempts to guess the correct answer.
+  let fruit = prompt('what is my faveret fruit?');
+  if (fruit !== fruitArr) {
+    alert('not of my fav fruit');
+  }
+
+  else {
     alert('yes it is');
     score++;
+  }
 }
-    }
 
-alert(score);
+alert('your final score is'+' '+score);
 
