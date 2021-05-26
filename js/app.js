@@ -1,7 +1,8 @@
 'use strict';
 let score = 0;
-/*let username=prompt('Enter your name please:')
+let username=prompt('Enter your name please:')
 //num1
+function Qnum1(){
 let movie= prompt('Do i like movies?(yes,No)');
 if (movie ==='yes' || movie ==='y')
 {
@@ -13,7 +14,12 @@ else{
     alert('the right answer join the club');
     score ++;
 }
+
+}
+  Qnum1();
+
 // num2
+function Qnum2(){
 let color=prompt ('Do i like worm colors or cold colors?' );
 if (color==='worm'|| color ==='worm colors')
 {
@@ -25,7 +31,10 @@ else{
     alert ('i like the cold color ');
     score ++;
 }
+}
+Qnum2();
 //num3
+function Qnum3(){
  let design=prompt('i like homedesiging and guses what the most color i like to use (white)yes or no? ');
  if (design==='no'|| design ==='n')
 {
@@ -37,7 +46,10 @@ else {
     alert ('i like white and gray  ');
     score ++;
 }
+}
+Qnum3();
 //num 4
+function Qnum3(){}
 let diy=prompt('do i like DIY and crafting(yes or no)');
 diy.toUpperCase();
 
@@ -51,8 +63,8 @@ else  {
     alert ('yes the right answer' );
     score ++;
 }
-
-alert ('welcome'+' '+username+' '+'to my page ')*/
+function Qnum5(){
+alert ('welcome'+' '+username+' '+'to my page ');
 /*num5
 Add a question to the guessing game that takes in a numeric input by prompting the user to guess a number.
 */
@@ -64,6 +76,9 @@ for (let i = 0; i <= 4; i++) { //It should give the user exactly four opportunit
     sister = prompt('guess how many sisters i have ?');
 
   }
+
+
+
   else if (sister == 1) {
     alert('you are right');
     score++;
@@ -77,7 +92,10 @@ for (let i = 0; i <= 4; i++) { //It should give the user exactly four opportunit
 
 }
 alert('1 sister is the right answer');// tell the user the correct answer.
+}
+Qnum5 ();
 //num6
+function Qnum6(){
 let fruitArr = ['banana', 'dates', 'orange', 'mango', 'peach'];// question that could have many possibilities (array i think) 
 for (let index = 0; index === 6; index++) {  //Give the user 6 attempts to guess the correct answer.
   let fruit = prompt('what is my faveret fruit?');
@@ -91,5 +109,7 @@ for (let index = 0; index === 6; index++) {  //Give the user 6 attempts to guess
   }
 }
 
-alert('your final score is'+' '+score);
 
+alert('your final score is'+' '+score);
+}
+Qnum6 ();
